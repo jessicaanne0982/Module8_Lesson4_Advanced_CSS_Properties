@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(241, 244, 241, 1);
+}
+
+.background-fade {
+    background-color: rgba(68, 116, 236, 0.5);
+}
+
+.text-shadow {
+    background-color: rgb(184, 182, 182, 1);
+}
+
+.text-shadow h1 {
+    background-color: rgb(184, 182, 182, 1);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+button {
+    background-color: rgba(108, 92, 231);
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 25px;
+    font-size: 14px;
+    transition: all 1s ease;
+}
+
+button:hover {
+    background-color: rgba(36, 232, 200, 0.9);
+    box-shadow: 0 0 15px rgba(36, 232, 200, 0.9);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(71, 22, 71, 0.9);
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.7s ease;
+}
+
+a:hover {
+    color: rgba(232, 58, 87, 0.9);
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+
+@keyframes scale {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+}
+
+.submit_button {
+    background-color: rgb(231, 92, 145, 0.8);
+    border: none;
+    border-radius: 20px;
+    padding: 25px;
+    font-size: 16px;
+
+}
+.submit_button:active {
+    animation: scale 2s ease-in-out;
+}
+
+img {
+    display: block;
+    width: 300px; 
+    height: auto;
+    animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
